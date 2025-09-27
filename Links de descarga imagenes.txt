@@ -1,0 +1,52 @@
+Logo youtube
+https://www.freepik.es/search?format=search&last_filter=query&last_value=youtube+png&query=youtube+png
+
+Logo Facebook
+https://www.freepik.es/search?format=search&last_filter=query&last_value=facebook+png&query=facebook+png
+
+Logo Instagram 
+https://www.freepik.es/search?format=search&last_filter=query&last_value=instagram+png&query=instagram+png
+
+**NOTES TO MYSELF **
+
+// Estas variables almacenan la información del pasajero y su vuelo
+String nombre_Pasajero;        // Guarda el nombre completo del pasajero
+String Ciudad_origen;          // Almacena la ciudad de donde sale el vuelo
+String Ciudad_destino;         // Almacena la ciudad a donde llega el vuelo
+String fecha_Vuelo;            // Guarda la fecha en que se realizará el vuelo
+String Asiento_pasajero;       // Almacena el número de asiento asignado
+
+// Estas variables manejan información numérica sobre la reserva
+int Numero_Pasajeros;          // Cantidad de personas que viajarán
+double precio_Por_Pasajero;    // Precio individual de cada tiquete
+double costo_Total;            // Precio total (pasajeros * precio individual)
+
+// El objeto Scanner permite leer la información que el usuario escribe
+Scanner input = new Scanner(System.in);
+
+                                  --------------------------------------
+Armenia (Aeropuerto El Edén)
+
+Barranquilla (Ernesto Cortissoz)
+
+Bogotá (El Dorado)
+
+Bucaramanga (Palonegro)
+
+Cali (Alfonso Bonilla Aragón)
+
+Cartagena (Rafael Núñez)
+
+Cúcuta (Camilo Daza)
+
+Leticia (Alfredo Vásquez Cobo)
+
+Medellín (José María Córdova)
+
+Pereira (Matecaña)
+
+Riohacha (Almirante Padilla)
+
+San Andrés (Gustavo Rojas Pinilla)
+
+Santa Marta (Simón Bolívar)

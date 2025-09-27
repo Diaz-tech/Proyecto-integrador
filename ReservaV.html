@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AeroViajes - Reserva de Vuelos</title>
+    <link rel="stylesheet" href="ReservaV.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <span>✈ AeroViajes</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="Inicio.html" target="_blank">Inicio</a></li>
+                    <li><a href="ReservaV.html"target="_blank">Reservar Vuelo</a></li>
+                    <li><a href="Modelo.html"target="_blank">Modelo BD</a></li>
+                    <li><a href="Destinos.html"target="_blank">Destinos</a></li>
+                    <li><a href="Contacto1.html"target="_blank">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner -->
+    <div class="container">
+        <div class="banner">
+            <div class="banner-content">
+                <h1>Reserva de Vuelos</h1>
+                <p>Viaja con comodidad y seguridad a tu destino soñado</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Formulario de reserva -->
+    <div class="container">
+        <div class="reserva-form">
+            <h2>Sistema de Reserva de Vuelos</h2>
+            
+            <div class="form-group">
+                <label for="nombre">Nombre del pasajero:</label>
+                <input type="text" id="nombre" placeholder="Ingrese su nombre completo">
+            </div>
+            
+            <div class="form-group">
+                <label for="origen">Ciudad de origen:</label>
+                <input type="text" id="origen" placeholder="Ciudad de origen">
+            </div>
+            
+            <div class="form-group">
+                <label for="destino">Ciudad de destino:</label>
+                <input type="text" id="destino" placeholder="Ciudad de destino">
+            </div>
+            
+            <div class="form-group">
+                <label for="fecha">Fecha del vuelo:</label>
+                <input type="date" id="fecha">
+            </div>
+            
+            <div class="form-group">
+                <label for="asiento">Asiento:</label>
+                <input type="text" id="asiento" placeholder="Ej: 15A">
+            </div>
+            
+            <div class="form-group">
+                <label for="pasajeros">Número de pasajeros:</label>
+                <input type="number" id="pasajeros" min="1" value="1">
+            </div>
+            
+            <div class="form-group">
+                <label for="precio">Precio por pasajero ($):</label>
+                <input type="number" id="precio" min="0" step="0.01" placeholder="0.00">
+            </div>
+            
+            <button onclick="calcularReserva()">Calcular Reserva</button>
+            
+            <div id="resultados" class="resultados">
+                <h3>Resumen de la Reserva</h3>
+                <p id="res-nombre"></p>
+                <p id="res-ruta"></p>
+                <p id="res-fecha"></p>
+                <p id="res-asiento"></p>
+                <p id="res-total"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="redes-sociales">
+                <a href="https://web.facebook.com/?locale=es_LA&_rdc=1&_rdr#" target="_blank">Facebook</a> | 
+                <a href="https://www.instagram.com/" target="_blank">Instagram</a> | 
+                <a href="https://x.com/?lang=es" target="_blank">X</a>
+            </div>
+            <p>✈ AeroViajes - Viaja con confianza</p>
+            <p>Teléfono: (123) 456-7890 | Email: info@aeroviajes.com</p>
+            <p>© 2025 AeroViajes. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Función para calcular la reserva (equivalente a tu código Java)
+        function calcularReserva() {
+            // Obtener valores del formulario
+            let nombre = document.getElementById('nombre').value;
+            let origen = document.getElementById('origen').value;
+            let destino = document.getElementById('destino').value;
+            let fecha = document.getElementById('fecha').value;
+            let asiento = document.getElementById('asiento').value;
+            let pasajeros = parseInt(document.getElementById('pasajeros').value);
+            let precio = parseFloat(document.getElementById('precio').value);
+            
+            // Validar que todos los campos estén completos
+            if (!nombre || !origen || !destino || !fecha || !asiento || !pasajeros || !precio) {
+                alert('Por favor, complete todos los campos.');
+                return;
+            }
+            
+            // Calcular costo total
+            let costoTotal = pasajeros * precio;
+            
+            // Mostrar resultados
+            document.getElementById('res-nombre').textContent = 'Pasajero: ' + nombre;
+            document.getElementById('res-ruta').textContent = 'Desde: ' + origen + ' hacia ' + destino;
+            document.getElementById('res-fecha').textContent = 'Fecha del vuelo: ' + fecha;
+            document.getElementById('res-asiento').textContent = 'Asiento: ' + asiento;
+            document.getElementById('res-total').textContent = 'Total a pagar: $' + costoTotal.toFixed(2);
+            
+            // Mostrar sección de resultados
+            document.getElementById('resultados').style.display = 'block';
+        }
+    </script>
+</body>
+</html>

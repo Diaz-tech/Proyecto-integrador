@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AeroViajes - Reserva de Vuelos</title>
+    <link rel="stylesheet" href="Contacto.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="Contenedor">
+            <div class="logo">
+                <span>✈ AeroViajes</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="Inicio.html" target="_blank">Inicio</a></li>
+                    <li><a href="ReservaV.html"target="_blank">Reservar Vuelo</a></li>
+                    <li><a href="Modelo.html"target="_blank">Modelo BD</a></li>
+                    <li><a href="Destinos.html"target="_blank">Destinos</a></li>
+                    <li><a href="Contacto1.html"target="_blank">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="Form">
+    <main>
+            <form action="">
+                <label for="lnom">Nombre completo</label>
+                <input type="text" name="Nombre" id="lnom" maxlength="50" style="width: 30%;"   >
+<br>
+<br>
+                <label for="ldir">Direccion</label>
+                <input type="text" name="Direccion" id="ldir" style="width: 33%;" >
+<br>
+<br>
+                <label for="lcel">Numero de Celular </label>
+                <input type="text" name="Direccion" id="ldir"  >
+                <input type="tel" name="Numero de Cel" id="lcel" pattern="[0-9]{10}" style="width: 21%;" >
+<br>
+<br>
+                <label for="lfec">Fecha de Nacimiento </label>
+                <input type="date" name="fecha de Nacimiento" style="width: 28%;">
+<br>
+<br>
+                <label for="lcorreo">Correo Electronico </label>
+                <input type="email" name="Correo Electronico" id="lcorreo" style="width: 25%;">
+<br>
+</div>
+    <fieldset>
+<legend>  Lugares de interes </legend>
+        <input type="checkbox" name="Tema1" id="lt1" >
+        <label for="lt1">Nacionales</label>
+            <br>
+        <input type="checkbox" name="Tema2" id="lt2" >
+        <label for="lt2">Internacionales/label>
+            <br>
+        <input type="checkbox" name="Tema3" id="lt3" >
+        <label for="lt3">N/A</label>
+        <br>
+        
+    </fieldset>
+
+
+
+<!-- Multilineas -->
+
+<label for="lmensaje">Comentario o sugerencia</label>
+<br>
+<textarea name="Texto" id="lmensaje" cols="90" rows="15"></textarea>
+
+                <!-- Boton enviar y Boton de limpiar -->
+<div class="central">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpiar">
+</div>
+
+            </form>
+
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="redes-sociales">
+                <a href="https://web.facebook.com/?locale=es_LA&_rdc=1&_rdr#" target="_blank">Facebook</a> | 
+                <a href="https://www.instagram.com/" target="_blank">Instagram</a> | 
+                <a href="https://x.com/?lang=es" target="_blank">X</a>
+            </div>
+            <p>✈ AeroViajes - Viaja con confianza</p>
+            <p>Teléfono: (321) 745-5621 | Email: info@aeroviajes.com</p>
+            <p>© 2025 AeroViajes. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+  
+</body>
+</html>
